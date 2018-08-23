@@ -100,6 +100,43 @@ public class App14 {
             System.out.println("No se encontro");
         }
         
+        
+        System.out.println("------------------------------------");
+        System.out.println("Subcadenas");
+        
+        
+        String cadenaATrabajar = "Esto es una cadena de caracteres";
+        
+        String cade1 = cadenaATrabajar.substring(0,15);
+        String cade2  = cadenaATrabajar.substring(1,7);
+        
+        //Tomamos desde el caracter 7 hasta el final
+        String cade3  = cadenaATrabajar.substring(7);
+        
+        System.out.println(cade1);
+        System.out.println(cade2);
+        System.out.println(cade3);
+        
+        
+        System.out.println("------------------------------------");
+        System.out.println("Prefijos y Sufijos");
+        
+        
+        String cadenaPrefijo = "Un buen libro de algoritmos en JAVA";
+        
+        boolean b1  = cadenaPrefijo.startsWith("Un buen");
+        System.out.println(b1);
+        
+        boolean b2  = cadenaPrefijo.startsWith("En");
+        System.out.println(b2);
+        
+        boolean b3  = cadenaPrefijo.endsWith("JAVA");
+        System.out.println(b3);
+         
+        boolean b4  = cadenaPrefijo.endsWith("C#");
+        System.out.println(b4);
+             
+        
     }
     
 }
