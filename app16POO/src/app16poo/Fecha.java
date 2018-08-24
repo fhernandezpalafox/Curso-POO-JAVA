@@ -23,9 +23,6 @@ public class Fecha {
         this.mes = mes;
         this.anio = anio;
     }
-
-    
-    
     
     public int getDia() {
         return dia;
