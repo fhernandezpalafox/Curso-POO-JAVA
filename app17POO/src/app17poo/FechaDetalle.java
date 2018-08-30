@@ -11,4 +11,8 @@ package app17poo;
  */
 public class FechaDetalle extends Fecha{
     
+    public void pruebaConsola(){
+        System.out.println("Prueba");
+    }
+    
 }

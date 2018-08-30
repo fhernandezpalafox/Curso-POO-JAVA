@@ -18,6 +18,11 @@ public class App17POO {
         // TODO code application logic here
         
         Fecha fecha =  new Fecha();
+        Fecha fecha3  =  new FechaDetalle();
+        
+        FechaDetalle fecha4  =   new FechaDetalle();
+        fecha4.pruebaConsola();
+
         Fecha fecha2  =  new Fecha("2/2/1989");
         fecha2.addDias(5);
         System.out.println(fecha2.getDia());
