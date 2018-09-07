@@ -53,13 +53,13 @@ public class App21POO {
                   }
                  
                  
-                 if (opcion == 4) {
+                 if (opcion2 == 4) {
                   
                      System.out.println("Capturname el nombre:");
                      
                      String nombreCap = scanner.next();
                      
-                    ArrayList<clsAlumno> list = objOperaciones.obtenerDatosPorAlumno(nombreCap);
+                     ArrayList<clsAlumno> list = objOperaciones.obtenerDatosPorAlumno(nombreCap);
                     
                      for(int i = 0; i < list.size(); i++) {
                     
