@@ -24,12 +24,14 @@ import javax.swing.table.DefaultTableModel;
 public class frmCapturaDatos extends javax.swing.JFrame {
 
     DefaultListModel carreras;
+    
     long tiempo = System.currentTimeMillis();
     Date fecha;
     
     //JTable
     ArrayList<Alumno> listaAlumno;
     DefaultTableModel modelotabla;
+    
     Object columnas[] = {"Nombre","Matricula","Telefono","Carrera","Hora"};
     String[] carrerasArray  = {"ITSN","ISSC","IB","IET"};
     
@@ -106,6 +108,7 @@ public class frmCapturaDatos extends javax.swing.JFrame {
         this.lblTiempo.setText(objformatter.format(tiempo2));
     }
 
+    
     public int extraerIndice(String valor){
         int indice = -1;
         
@@ -166,6 +169,11 @@ public class frmCapturaDatos extends javax.swing.JFrame {
         });
 
         btnImprimir.setText("Imprimir");
+        btnImprimir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnImprimirActionPerformed(evt);
+            }
+        });
 
         btnNuevo.setText("Nuevo");
         btnNuevo.addActionListener(new java.awt.event.ActionListener() {
@@ -392,6 +400,18 @@ public class frmCapturaDatos extends javax.swing.JFrame {
 
     private void btnAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAceptarActionPerformed
         // TODO add your handling code here:
+        
+        
+        //Validador
+        if(txtNombre.getText().equals("") && txtMatricula.getText().equals("")){
+          JOptionPane.showMessageDialog(null, 
+                  "Captura los campos", 
+                  "Captura de datos", 
+                  JOptionPane.WARNING_MESSAGE);
+          return;
+        }
+        
+        
         Alumno objAlumno = new Alumno();
         
         objAlumno.setNombre(txtNombre.getText());
@@ -423,6 +443,15 @@ public class frmCapturaDatos extends javax.swing.JFrame {
             lstCarreras.setSelectedIndex(extraerIndice(objAlumnoSelecccionado.getCarrera()));
             
     }//GEN-LAST:event_tblRegistrosMouseClicked
+
+    private void btnImprimirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnImprimirActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null,
+                "El nombre "+txtNombre.getText()+"\n"+
+                "La matricula es:"+txtMatricula.getText()+"\n", 
+                "Imprimir", 
+                JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_btnImprimirActionPerformed
 
     /**
      * @param args the command line arguments
