@@ -28,7 +28,7 @@ public class App20POO {
         System.out.println("Tu nombre es"
                      +objAlumno.getNombre()
                 +", tu edad="+objAlumno.getEdad()
-                +", tu iniversidad es "
+                +", tu universidad es "
                 +objAlumno.getUniversidad());
         
     }

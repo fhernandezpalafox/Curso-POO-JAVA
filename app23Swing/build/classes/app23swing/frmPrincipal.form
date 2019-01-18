@@ -41,11 +41,9 @@
                       <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="lblResultado" pref="202" max="32767" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="txtNumero1" max="32767" attributes="0"/>
-                              <Component id="txtNumero2" max="32767" attributes="0"/>
-                              <Component id="txtNumero3" pref="202" max="32767" attributes="0"/>
-                          </Group>
+                          <Component id="txtNumero1" max="32767" attributes="0"/>
+                          <Component id="txtNumero2" max="32767" attributes="0"/>
+                          <Component id="txtNumero3" pref="202" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="btnCalcular" min="-2" pref="88" max="-2" attributes="0"/>
@@ -78,7 +76,7 @@
                   <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtNumero3" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="47" max="32767" attributes="0"/>
+              <EmptySpace pref="33" max="32767" attributes="0"/>
               <Component id="lblResultado" min="-2" pref="16" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>

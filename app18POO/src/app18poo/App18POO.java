@@ -20,7 +20,7 @@ public class App18POO {
         // TODO code application logic here
         
         /*
-        Mensaje msg =  new Mensaje("Esto es una pruba");
+        Mensaje msg =  new Mensaje("Esto es una prueba");
         System.out.println(msg.getTitulo()+"-"+msg.getMensaje());
         Mensaje msg2  =  new Mensaje("Titulo", "mensaje");
         System.out.println(msg2.getTitulo()+"-"+msg2.getMensaje());

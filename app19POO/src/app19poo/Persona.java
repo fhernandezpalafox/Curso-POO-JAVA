@@ -21,7 +21,7 @@ public interface Persona {
     public void getPersona();
     
     public void getOcupacion();
-    
+      
    
     
 }

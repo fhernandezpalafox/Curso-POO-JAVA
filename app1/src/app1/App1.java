@@ -22,6 +22,7 @@ public class App1 {
     
     /**
      * @param args the command line arguments
+     * 
      */
     public static void main(String[] args) {
         // TODO code application logic here
@@ -82,7 +83,7 @@ public class App1 {
     }
     
     public static int traerEdad(int aniodeNaci, int anioActual){
-       
+        
         return anioActual - aniodeNaci;
     }
     

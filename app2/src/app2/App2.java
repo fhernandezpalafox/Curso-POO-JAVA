@@ -5,7 +5,9 @@
  */
 package app2;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
+
 
 
 
@@ -41,10 +43,12 @@ public class App2 {
              String datos = "Tu nombre es: "+nombre+", Tu edad es: "+edad+", tu altura es: "+altura;
          
          
-        System.out.println(datos);
+        System.out.println(datos); 
             
-            
-        } catch (Exception e) {
+        } catch(InputMismatchException ex){
+            System.out.println("Dato no valido");
+        } 
+        catch (Exception e) {
             System.out.println("hubo un error: "+e.getMessage());
         }
         
