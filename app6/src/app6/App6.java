@@ -26,7 +26,21 @@ public class App6 {
         
         int valor  = scanner.nextInt();
         
+          if (valor == 0) {
+                System.out.println("Captura un dato diferente de cero");
+                return;
+            }
+           
+          
         int residuo = valor % 2;
+        
+        /*
+          if (residuo == 0){
+                System.out.println("El valor introducido si es par");
+            }else {
+                System.out.println("El valor introducido si es impar");
+            }
+        */
         
         //if in-line u Operador Ternario.
         String msg  = (residuo == 0)? " Es par": " Es impar";

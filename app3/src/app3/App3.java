@@ -8,6 +8,7 @@ package app3;
 import java.util.Scanner;
 
 
+
 /**
  *
  * @author felipehernandez
@@ -19,11 +20,11 @@ public class App3 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
-        Scanner scanner = new Scanner(System.in);
-        
+
+        Scanner objscanner = new Scanner(System.in);
+
         System.out.println("Ingrese su edad:");
-        int edad = scanner.nextInt();
+        int edad = objscanner.nextInt();
         
         if(edad >= 22){
             System.out.println("Usted es mayor de edad");

@@ -17,6 +17,7 @@ import java.util.Scanner;
  */
 public class App2 {
 
+    
     /**
      * @param args the command line arguments
      */
@@ -30,20 +31,22 @@ public class App2 {
             System.out.println("Ingrese su nombre: ");
             String nombre =  scanner.nextLine();
 
-
              System.out.println("Ingrese su edad: ");
              //String edad =  scanner.nextLine();
              int edad  =  scanner.nextInt();
 
-
-              System.out.println("Ingrese su altura: ");
-             //String altura =  scanner.nextLine();        
+              System.out.println("Ingrese su altura: ");       
              double altura = scanner.nextDouble();
+             
+                  System.out.println("Ingrese su peso: ");       
+             double peso = scanner.nextDouble();
 
-             String datos = "Tu nombre es: "+nombre+", Tu edad es: "+edad+", tu altura es: "+altura;
+             double imc = peso / altura;
+             
+             String datos = "Tu nombre es: "+nombre+", Tu edad es: "+
+                     edad+", tu altura es: "+altura+", tu IMC es: "+imc;
          
-         
-        System.out.println(datos); 
+             System.out.println(datos); 
             
         } catch(InputMismatchException ex){
             System.out.println("Dato no valido");

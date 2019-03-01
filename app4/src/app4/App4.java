@@ -25,7 +25,15 @@ public class App4 {
         
             System.out.println("Ingrese un valor");
 
+             
             int valor =  scanner.nextInt();
+       
+            if (valor == 0) {
+                System.out.println("Captura un dato diferente de cero");
+                return;
+            }
+           
+            
 
             int residuo =  valor%2;
 
