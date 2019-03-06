@@ -25,14 +25,14 @@ public class App8 {
         
         int valor  = scanner.nextInt();
         
-        int i = 1;
+        int j = 1;
         
         do{
         
-            System.out.println("El valor de i es:"+i);
+            System.out.println("El valor de j es:"+j);
             //Incrementar el valor
-            i++;
-        }while(i < valor);
+            j++;
+        }while(j < valor); // 1 < 4
         
     }
     

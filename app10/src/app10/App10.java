@@ -49,6 +49,9 @@ public class App10 {
             case MARTES:
                 dia = "MARTES";
                 break;
+            case MIERCOLES:
+                dia = "MIERCOLES";
+                break;
              default:
                 dia  = "día incorrecto";
         }

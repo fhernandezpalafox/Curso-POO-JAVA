@@ -28,7 +28,8 @@ public class App11 {
         
         int i = 0;
         
-        while (valor!= 0 && i<10) {            
+        //     valor Introducido es diferente de cero   true Y 0<10
+        while (valor!= 0 && i<10) {    //9          
             
             arr[i++] = valor;
             
