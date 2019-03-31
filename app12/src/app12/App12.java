@@ -26,9 +26,15 @@ public class App12 {
         
         System.out.println("Ingrese el dia de la semana (numero): ");
         
-        int dia = scanner.nextInt();
+        int dia = scanner.nextInt(); //7
         
-        if (dia <= dias.length) {
+        
+        if (dia == 0) {
+              System.out.println("No existe ese dia, te recomiendo saber contar");
+              return;
+        }
+        
+        if (dia <= dias.length) { // 7 se comienza desde 0
             
             System.out.println("El dia ingresado fue "+dias[dia-1]);
         }else {
