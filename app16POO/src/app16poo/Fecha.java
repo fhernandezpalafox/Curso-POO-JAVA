@@ -18,10 +18,10 @@ public class Fecha {
     public Fecha() {
     }
 
-    public Fecha(int dia, int mes, int anio) {
-        this.dia = dia;
-        this.mes = mes;
-        this.anio = anio;
+    public Fecha(int pdia, int pmes, int panio) {
+        this.dia = pdia;
+        this.mes = pmes;
+        this.anio = panio;
     }
     
     public int getDia() {

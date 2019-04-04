@@ -60,12 +60,14 @@ public class App16POO {
         System.out.println(f.toString());
         
         
+       
         FechaDetalle fechadetalle  = new FechaDetalle();
         fechadetalle.setAnio(1988);
         fechadetalle.setDia(3);
         fechadetalle.setMes(3);
         System.out.println(fechadetalle.toString());
         fechadetalle.getFechaCustom();
+    
         
     }
     
