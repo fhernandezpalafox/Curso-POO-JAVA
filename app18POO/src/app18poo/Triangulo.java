@@ -18,8 +18,7 @@ public class Triangulo extends FiguraGeometrica {
         this.base = base;
         this.altura = altura;
     }
-    
-    
+
     @Override
     public double area() {
         return (base * altura) / 2;
@@ -29,5 +28,7 @@ public class Triangulo extends FiguraGeometrica {
     public void imprimirFigura() {
         System.out.println("Triangulo");
     }
+    
+    
     
 }
