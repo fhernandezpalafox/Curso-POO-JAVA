@@ -21,7 +21,9 @@ public class Triangulo {
         
         Operacion  = (this.A+this.B+this.C)/2;
         
-        Resultado = Math.sqrt(Operacion*(Operacion-this.A)*(Operacion-this.B)*(Operacion-this.C));
+        Resultado = Math.sqrt(Operacion*(Operacion-this.A)
+                             *(Operacion-this.B)*
+                                (Operacion-this.C));
         
     }
 

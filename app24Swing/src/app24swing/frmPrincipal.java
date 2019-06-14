@@ -129,6 +129,8 @@ public class frmPrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:
         
         clsFecha objfecha =  new clsFecha();
+        
+        
         objfecha.setDia(txtDia.getText());
         objfecha.setMes(txtMes.getText());
         objfecha.setAnio(txtAnio.getText());

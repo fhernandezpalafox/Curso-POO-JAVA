@@ -25,6 +25,7 @@ public class App22Swing {
         JFrame f = new JFrame("Titulo de ventana");
         f.setSize(400, 300);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
         Container cp =  f.getContentPane();
         cp.setLayout(new FlowLayout());
         /*JLabel etiqueta = new JLabel("Nombre: ");
@@ -38,7 +39,7 @@ public class App22Swing {
         gl.setHgap(5); gl.setVgap(5);
         cp.setLayout(gl);
         for(int i = 1; i <= 9; i++) {
-        cp.add(new JButton(String.valueOf(i)));
+          cp.add(new JButton(String.valueOf(i)));
         }
         cp.add(new JButton("*"));
         cp.add(new JButton("0"));

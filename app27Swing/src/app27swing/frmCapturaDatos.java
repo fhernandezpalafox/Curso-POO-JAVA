@@ -49,10 +49,10 @@ public class frmCapturaDatos extends javax.swing.JFrame {
         this.lstCarreras.setModel(new DefaultListModel());
        
         //Esto sucede con JAVA 8
+        
         Timer reloj = new Timer(1000, (ActionEvent e) -> {
             onTimer();
         });
-        
         reloj.start();
         
         fecha =  new Date(tiempo);
@@ -74,6 +74,10 @@ public class frmCapturaDatos extends javax.swing.JFrame {
         
         
     }
+    
+    
+    
+    
     
     public void llenarTabla(){
     

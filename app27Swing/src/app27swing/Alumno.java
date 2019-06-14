@@ -56,6 +56,8 @@ public class Alumno {
     public void setHora(String hora) {
         this.hora = hora;
     }
+
+    
     
     
     
