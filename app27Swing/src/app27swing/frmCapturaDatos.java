@@ -5,15 +5,15 @@
  */
 package app27swing;
 
-import javax.swing.DefaultListModel;
-import javax.swing.Timer;
-import java.util.*;
+import javax.swing.DefaultListModel; //Mediador para llenar jlist
+import javax.swing.Timer; //Verifica el tiempo del sistema
+import java.util.*; 
 import java.awt.event.*;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import javax.swing.JOptionPane;
-import javax.swing.JTable;
-import javax.swing.table.DefaultTableModel;
+import java.text.SimpleDateFormat; //Formatear las fechas
+import java.util.Date; //Trabajar con las fechas
+import javax.swing.JOptionPane; //Trabajar con los mensajes
+import javax.swing.JTable; //Componente de la tabla
+import javax.swing.table.DefaultTableModel;  //Mediador de llenar tabla
 
 
 
@@ -32,7 +32,10 @@ public class frmCapturaDatos extends javax.swing.JFrame {
     ArrayList<Alumno> listaAlumno;
     DefaultTableModel modelotabla;
     
+    //Tabla
     Object columnas[] = {"Nombre","Matricula","Telefono","Carrera","Hora"};
+    
+    //DataSuorce
     String[] carrerasArray  = {"ITSN","ISSC","IB","IET"};
     
     
@@ -49,7 +52,6 @@ public class frmCapturaDatos extends javax.swing.JFrame {
         this.lstCarreras.setModel(new DefaultListModel());
        
         //Esto sucede con JAVA 8
-        
         Timer reloj = new Timer(1000, (ActionEvent e) -> {
             onTimer();
         });
@@ -395,11 +397,10 @@ public class frmCapturaDatos extends javax.swing.JFrame {
 
     private void btnNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevoActionPerformed
         // TODO add your handling code here:
-        
         this.txtMatricula.setText("");
         this.txtNombre.setText("");
         this.txtTelefono.setText("");
-        this.lstCarreras.setSelectedIndex(0);
+        this.lstCarreras.setSelectedIndex(-1);
     }//GEN-LAST:event_btnNuevoActionPerformed
 
     private void btnAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAceptarActionPerformed

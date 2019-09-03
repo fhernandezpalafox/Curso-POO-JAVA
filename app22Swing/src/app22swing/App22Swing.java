@@ -22,7 +22,8 @@ public class App22Swing {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        JFrame f = new JFrame("Titulo de ventana");
+        JFrame f = new JFrame();
+        f.setTitle("Titulo de ventana");
         f.setSize(400, 300);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
@@ -35,9 +36,12 @@ public class App22Swing {
         cp.add(texto);
         cp.add(boton);*/
         
-        GridLayout gl = new GridLayout(4,3);
-        gl.setHgap(5); gl.setVgap(5);
+        GridLayout gl = new GridLayout(5,3);
+        gl.setHgap(5); 
+        gl.setVgap(5);
         cp.setLayout(gl);
+        
+        
         for(int i = 1; i <= 9; i++) {
           cp.add(new JButton(String.valueOf(i)));
         }

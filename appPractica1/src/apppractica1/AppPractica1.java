@@ -3,22 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package app23swing;
+package apppractica1;
 
 /**
  *
- * @author felipehernandez
+ * @author user
  */
-public class App23Swing {
+public class AppPractica1 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
         new frmPrincipal().setVisible(true);
-                
     }
-    
+
 }
