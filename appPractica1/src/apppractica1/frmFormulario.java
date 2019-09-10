@@ -226,6 +226,9 @@ public class frmFormulario extends javax.swing.JFrame {
         objPrincipal.rfc  = "RFC";
         objPrincipal.asignarDatos();
         
+        //Cerrar la venta JFRAME
+        this.dispose();
+        
     }//GEN-LAST:event_btnAceptarActionPerformed
 
     private void btnGenerarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerarActionPerformed

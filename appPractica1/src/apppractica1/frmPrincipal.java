@@ -172,8 +172,8 @@ public class frmPrincipal extends javax.swing.JFrame {
     public void llamarFormulario(String titulo){
       
           frmFormulario frm  =  new frmFormulario(titulo,this);
-              frm.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-              frm.setLocationRelativeTo(null);
+              frm.setDefaultCloseOperation(DISPOSE_ON_CLOSE); //Cerrar la ventana en cuestión
+              frm.setLocationRelativeTo(null); //Centrar
               frm.setVisible(true);
     }
     
